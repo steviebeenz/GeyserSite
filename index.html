@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>GeyserMC</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8" />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="GeyserMC" />
         <meta name="keywords" content="minecraft, bedrock, java, protocol, packet, pe, geyser, bridge, bedrock-edition, java-edition, proxy, java servers on bedrock, java server on phone, minecraft bridge, cross platform, protocol translator, translator, middleware, bedrock on java, minecraft server" />
         <meta name="description" content="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition which allows you to join Minecraft Java servers with Bedrock Edition servers to enable true cross-platform." />
-		
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="GeyserMC">
+        <meta name="application-name" content="GeyserMC">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://geysermc.org">
+        <meta property="og:title" content="GeyserMC">
+        <meta property="og:description" content="Geyser is a bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition which allows you to join Minecraft Java servers with Bedrock Edition servers to enable true cross-platform.">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@geyser_mc">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="img/site.webmanifest">
-        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#009bcf">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <meta name="msapplication-TileColor" content="#009bcf">
-        <meta name="msapplication-config" content="img/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=JsSFAj">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=JsSFAj">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=JsSFAj">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=JsSFAj">
+        <link rel="manifest" href="/site.webmanifest?v=JsSFAj">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?v=JsSFAj" color="#009000">
+        <link rel="shortcut icon" href="/favicon.ico?v=JsSFAj">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
-            <a class="navbar-brand" href="#"><img src="img/logonav.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="navbar-brand"><img class="nav-logoimg" src="img/geyser.png" alt="geyser logo"></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -31,35 +43,45 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="http://ci.geysermc.org"><button class="btn nav-link"><i class="fas fa-cloud-download-alt"></i> Download</button></a>
+                        <a href="https://ci.geysermc.org"><button class="btn nav-link"><i class="fas fa-cloud-download-alt"></i>&nbsp;<span>Download</span></button></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/GeyserMC/Geyser"><i class="fab fa-github"></i> Source</a>
+                        <a href="https://github.com/GeyserMC/Floodgate/"><button class="btn nav-link"><i class="fas fa-door-open"></i>&nbsp;<span>Floodgate</span></button></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://discord.geysermc.org"><i class="fab fa-discord"></i> Discord</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/GeyserMC/Geyser/wiki#Setup"><i class="fas fa-toggle-on"></i> Installation</a>
+                        <a class="nav-link" href="https://github.com/GeyserMC/Geyser"><i class="fab fa-github"></i>&nbsp;<span>Source</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.geysermc.org"><i class="fab fa-discord"></i>&nbsp;<span>Discord</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/GeyserMC/Geyser/wiki/Setup"><i class="fas fa-tools"></i>&nbsp;<span>Setup</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="config_editor.html"><i class="fas fa-sliders-h"></i>&nbsp;<span>Config Editor</span></a>
+                    </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="https://patreon.com/GeyserMC"><i class="fab fa-patreon"></i> Donate</a>
                     </li>
+                    -->
                 </ul>
             </div>
         </nav>
         <header>
-            <div id="header" class="section1">
+            <div id="header" class="section1 sections">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 text-center">
+                            <img class="logoimg" src="img/geyser.png" alt="geyser logo"/>
                             <h1 class="text-center">Revolutionize Your Minecraft Server</h1>
-                            <h3 class="text-center">Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.</h5>
+                            <h4 class="text-center">Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <div id="whatisgeyser" class="section2">
+        <div id="whatisgeyser" class="section2 sections">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -67,12 +89,12 @@
                         <p>Geyser is a proxy, bridging the gap between Minecraft: Bedrock Edition and Minecraft: Java Edition servers. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible to allow for true cross-platform.</p>
                     </div>
                     <div class="col">
-                        <img style="float: right;" src="img/crossplat0.png" />
+                        <div><img src="img/crossplat0.png" alt="image of bedrock client on java edition server"/></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="howto" class="section3">
+        <div id="howto" class="section3 sections">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -80,75 +102,99 @@
                     </div>
                     <div class="col">
                         <h1>How do I use it?</h1>
-                        <p>Geyser can be downloaded from our Jenkins server <a href="http://ci.geysermc.org">here</a> and setup installations can be found on our <a href="https://github.com/GeyserMC/Geyser/wiki#Setup">wiki</a> or in the tutorial video.. Geyser can be used to join any modern Java server and doesn't require anything extra to be done on their end.</p>
+                        <p>Geyser can be downloaded from our Jenkins server <a href="http://ci.geysermc.org">here</a> and setup installations can be found on our <a href="https://github.com/GeyserMC/Geyser/wiki#Setup">wiki</a> or in the tutorial video. Geyser can be used to join any modern Java server and doesn't require anything extra to be done on their end.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="howitworks" class="section4">
+        <div id="howitworks" class="section4 sections">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <h1>How does it work?</h1>
-                        <p>Geyser is a middleware, which translates all the incoming and outgoing packets. With this being said, Geyser works as a proxy, meaning you can use it to join <i>any</i> modern Minecraft Java server.</p>
+                        <p>Geyser is a middleware, which translates all the incoming and outgoing packets. With this being said, Geyser works as a standalone proxy, meaning you can use it to join <i>any</i> modern Minecraft Java server. Geyser can also be installed on your server as a plugin, so you can easily make your server compatible with Minecraft: Bedrock Edition.</p>
                     </div>
                     <div class="col">
-                        <img style="float: left;" src="img/crossplat1.png" />
+                        <div><img src="img/crossplat1.png" alt="diagram of bedrock edition to geyser to java edition"/></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer" class="section5">
+        <div id="floodgate" class="section5 sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Join from anywhere</h1>
+                        <p>Geyser can be joined from Windows 10, iOS, Android, and even consoles
+                            (see <a href="https://github.com/GeyserMC/Geyser/wiki/Using-Geyser-with-Consoles">here</a>
+                            for how to set this up!) Geyser is tested working with a
+                            <a href="https://github.com/GeyserMC/Geyser/wiki/Supported-Hosting-Providers">wide array of hosting providers</a>,
+                        and, if you own the server, you aren't limited by a Java account with our <a href="https://github.com/GeyserMC/Floodgate/">Floodgate</a>
+                        plugin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="section6 sections">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm">
                         <div class="card">
                             <div class="row no-gutters">
-                                <div class="col">
-                                    <a href="https://github.com/GeyserMC/Geyser">
+                                <a href="https://github.com/GeyserMC/Geyser">
+                                    <div class="s6-icon s6-elements">
                                         <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body" style="min-width: 175px;">
+                                    </div>
+                                    <div class="s6-details s6-elements">
                                         <h5 class="card-title">Source Code</h5>
                                         <p class="card-text">Click here to view the source code!</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card">
                             <div class="row no-gutters">
-                                <div class="col">
-                                    <a href="http://discord.geysermc.org/">
+                                <a href="http://discord.geysermc.org/">
+                                    <div class="s6-icon s6-elements">
                                         <i class="fab fa-discord"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body" style="min-width: 175px;">
+                                    </div>
+                                    <div class="s6-details s6-elements">
                                         <h5 class="card-title">Discord</h5>
                                         <p class="card-text">Click here to join our Discord community!</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="http://ci.geysermc.org/">
+                            <div class="row no-gutters">
+                                <a href="http://ci.geysermc.org/">
+                                    <div class="s6-icon s6-elements">
                                         <i class="fas fa-cloud-download-alt"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body" style="min-width: 175px;">
+                                    </div>
+                                    <div class="s6-details s6-elements">
                                         <h5 class="card-title">Download</h5>
                                         <p class="card-text">Click here to download Geyser!</p>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <a href="https://github.com/GeyserMC/Geyser/wiki/Setup">
+                                    <div class="s6-icon s6-elements">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <div class="s6-details s6-elements">
+                                        <h5 class="card-title">Setup</h5>
+                                        <p class="card-text">Click here to view the setup instructions!</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +205,7 @@
             <div class="container">
                 <div class="row py-4 d-flex align-items-center">
                     <div class="col text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0">&copy 2020 GeyserMC</h6>
+                        <h6 class="mb-0">&copy 2021 GeyserMC</h6>
                     </div>
                 </div>
             </div>
@@ -170,18 +216,27 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script>
-            $(document).ready(function(){
-              $(window).scroll(function() {
+            const gmc_nav_listener = function () {
+                let navbar = $(".navbar");
+                let navbar_logo = $('.nav-logoimg');
                 if ($(document).scrollTop() > 225) {
-                  $(".navbar").css("background-color", "rgba(0, 0, 0, 0.9)");
-                  $(".navbar").css("margin", "0px");
-                  $(".navbar").css("padding", "20px 20px 10px 20px");
+                  navbar.css("background-color", "rgba(0, 0, 0, 0.9)");
+                  navbar.css("box-shadow", "0 .5rem 1rem rgba(0, 0, 0, 0.15)");
+                  navbar.css("margin", "0px");
+                  navbar.css("padding", "5px 10px 5px 10px");
+                  navbar.css("border-radius", "0");
+                  navbar_logo.css("opacity", '1.0');
                 } else {
-                  $(".navbar").css("background-color", "rgba(255, 255, 255, 0.1)");
-                  $(".navbar").css("margin", "10px");
-                  $(".navbar").css("padding", "10px 10px 10px 10px");
+                  navbar.css("background-color", "rgba(255, 255, 255, 0.0)");
+                  navbar.css("box-shadow", "0 .5rem 1rem rgba(0, 0, 0, 0.0)");
+                  navbar.css("margin", "10px");
+                  navbar.css("padding", "5px 10px 5px 10px");
+                  navbar.css("border-radius", "25px");
+                  navbar_logo.css("opacity", '0.0');
                 }
-              });
+              };
+            $(document).ready(function(){
+              $(window).scroll(gmc_nav_listener);
             });
         </script>
     </body>
